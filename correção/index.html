@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correção - Bank 90</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- compilado de lista de links que vai ter -->
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="imgs/logoWhite.svg" alt="logo">
+                    </a>
+                 </li>    
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="#">Empréstimos</a></li>
+                    <li><a href="#">Sua conta bancária</a></li>
+            </ul>
+        </nav>
+        <button type="button">Abra sua conta</button>
+    </header>
+
+    <main>
+        <section id="banner">
+            <img src="imgs/banner.jpg" alt="mulheres sorrindo">
+            <div id="welcome">
+                Aqui você encontra o melhor serviço e atendimento do Brasil
+                <button type="button">Faça sua conta agora</button>
+            </div>
+
+        </section>
+        <!-- Formas de Pagamento -->
+        <section id="pagamento">
+            <h3>ESCOLHA A FORMA DE PAGAMENTO FAVORITA</h3>
+            <div id="agrupamentoForma">
+                <div class="forma" id="boleto">
+                    <img src="imgs/codigoDeBarras.svg" alt="código de barra">
+                    BOLETO
+                </div>
+                <div class="forma" id="cartao">
+                    <img src="imgs/CartaoDeCredito.svg" alt="cartão">
+                    CARTÃO
+                </div>
+                <div class="forma" id="dinheiro">
+                    <img src="imgs/Dinheiro.svg" alt="dinheiro">
+                    DINHEIRO
+                </div>
+
+            </div>
+        </section>
+        <section id="servicos">
+
+        </section>
+        <!-- Imagens de cartões - usadndo background -->
+        <section id="cliente" >
+            <h3>SEJA CLIENTE DE DIVERSAS MANEIRAS</h3>
+            <!-- alinhamento: definir hierarquia. A % é puxada da tag pai -->
+            <div id="agrupamentoCartoes"> 
+                <div class="cartao" id="cartao1"></div>
+                <div class="cartao" id="cartao2"></div>
+                <div class="cartao" id="cartao3"></div>
+            </div>
+        </section>
+
+        <!-- TABELA -->
+        <section id="horario">
+            <h3>HORÁRIO DE ATENDIMENTO</h3>
+            <!-- primeiro linha e depois coluna -> construção -->
+            <table> 
+                <!-- dias da semana -->
+                <tr>
+                    <th></th>
+                    <th>SEGUNDA</th>
+                    <th>TERÇA</th>
+                    <th>QUARTA</th>
+                    <th>QUINTA</th>
+                    <th>SEXTA</th>
+                </tr>
+                <tr>
+                    <th>Marcelo</th>
+                    <td>09:00 às 13:00</td>
+                    <td>08:00 às 12:00</td>
+                    <td>09:00 às 14:00</td>
+                    <td>09:00 às 12:00</td>
+                    <td>09:00 às 12:00</td>
+                </tr>
+                <tr>
+                    <th>Daniela</th>
+                    <td>09:00 às 13:00</td>
+                    <td>08:00 às 12:00</td>
+                    <td>09:00 às 14:00</td>
+                    <td>09:00 às 12:00</td>
+                    <td>09:00 às 12:00</td>
+                </tr>   
+                <tr>
+                    <th>João</th>
+                    <td>09:00 às 13:00</td>
+                    <td>08:00 às 12:00</td>
+                    <td>09:00 às 14:00</td>
+                    <td>09:00 às 12:00</td>
+                    <td>09:00 às 12:00</td>
+                </tr>   
+            </table>
+
+        </section>
+    </main>
+
+    <footer>
+        Todos direitos reservados ao Bank 90 ©
+    </footer>
+</body>
+</html>

@@ -1,0 +1,206 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* flex: mudar a orientação na página */
+/* o padrão é blocl: começa na esquerda de cima e acabana direita embaixo */
+main {
+    width: 100%;
+    /* flexbox - ficar flexivel */
+    display: flex;
+    /* deixar uma seção debaixo da outra */
+    flex-direction: column;
+    /* o eixo foi invertido por causa do flex */
+    align-items: center;
+    /* align-content: alinhamento vertical*/
+    /* justify content:*/
+}
+
+/* SEÇÃO DE CLIENTES */
+/* mexer com posicionamento precisa do width para nortear */
+#cliente {
+    width: 100%;
+    /* outro jeito de centralizar 
+    display: flex
+    justify content: center*/
+}
+h3 {
+    text-align: center;
+}
+
+#agrupamentoCartoes {
+    width: 100%;
+    /* ficam deitados, com espaço e no centro do seu pai */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* espaçamento entre o tíulo e a tabela */
+    margin: 20px 0px;
+
+}
+
+.cartao {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    
+    /* cover; cobrir aquele espaço disponível */
+    background-size: cover;
+    /* centralizar no foco da imagem  */
+    background-position: center;
+    /* para não repetir a imagem no bg */
+    background-repeat: no-repeat;
+}
+
+/* as imagens foram editadas automaticamente, por causa das configurações do background */
+#cartao1 {
+    background-image: url(../imgs/cartaoUm.jpg);
+
+}
+
+#cartao2 {
+    background-image: url(../imgs/cartaoDois.jpg);
+
+}
+
+#cartao3 {
+    background-image: url(../imgs/cartaoTres.jpg);
+
+}
+
+/* TABELA DE HORÁRIO */
+
+#horario {
+    width: 70%;
+    background-color: white;
+      /* separar do texto de cima e do footer */
+    margin: 10px;
+    box-shadow: 6px 6px 4px rgb(155, 155, 155);
+    border-radius: 5px;
+}
+
+h3 {
+    text-align: center;
+}
+
+th {
+    color: white;
+    background-color: #ba2d2d;
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+    border: 1px solid rgb(146, 146, 146);
+    padding: 10px;
+}
+
+table{
+    /* juntar as bordas */
+    border-collapse: collapse;
+    margin: 30px;
+}
+
+/* pseudoclasse */
+/* empty: elemento sem nenhum contéudo. Se o th estiver empty, faça ... */
+th:empty {
+    background-color: transparent;
+    border: none;
+}
+
+th:hover{
+    background-color: rgb(241, 223, 223);
+    color: #ba2d2d;
+}
+/* aceita mais de uma psedoclasse */
+th:empty:hover {
+    background-color: #ba2d2d;
+}
+
+/* position: mexer na posição de elementos da tela - pode passar coordenadas*/
+/* absolute: desobedece hierarquia. Fica acima de todos (top, bottom, right ou end, left ou start) */
+/* sticky: gruda na tela; fixed: sempre na tela */
+
+
+/* cabeçalho e rodape */
+header, footer {
+    width: 100%;
+    background-color: #ba2d2d;
+    color: white;
+    display: flex;
+    padding: 20px 0px;
+
+}
+
+footer {
+    margin-top: 20px;
+    justify-content: center;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* colocar os itens da lista lado a lado */
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 20px
+
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+/* colocar os itens da lista no eo do header */
+header li {
+    display: flex;
+    align-items: center;
+}
+header button {
+    background-color: transparent;
+    color: white;
+    padding: 8px;
+    /* tirar a borda original e personalizar uma nova */
+    border: none;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+/* FORMAS PAGAMENTO */
+#agrupamentoForma{
+    width: 100%;
+    /* ficam deitados, com espaço e no centro do seu pai */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* espaçamento entre o tíulo e a tabela */
+    margin: 20px 0px;
+}
+.forma {
+    width: 200px;
+    height: 210px;
+    margin: 10px;
+    border: 1px solid rgb(156, 156, 156);
+}
+
+#boleto {
+}
+
+
+/* banner */
+#banner img {
+    margin: 20px 0px;
+    width: 100%;
+    height: 1000px;
+    
+}
+
+
+
+

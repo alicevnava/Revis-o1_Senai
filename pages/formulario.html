@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1 style="text-align:center;">Revisão formulário</h1>
+    <!-- action: pra onde manda as infos preenchidas -->
+    <!-- get: pega as infos do for, manda para o url e ai vai para o servidor. Pode ser usado como teste-->
+    <!-- post:pega do for e manda para o servidor. Oficial, mais segurança para o usuário -->
+    <form action="#" method="">
+        <!-- input: onde usuário coloca informação. Há vários tipos -->
+        <!-- text: caixinha de texto -->
+        <input type="text">
+        <!-- label: tem que chamar id e o "título" daquele input -->
+        <label for="senha" id="senha">Digite a senha</label>
+        <!-- required: campo obrigatório -->
+        <!-- placeholder: instrução para o usuário o que fazer naquele input. No próprio campo-->
+        <input type="password"  required placeholder="Senha">
+        <!-- submit: enviar -->
+        <button type="submit">ENVIAR</button>
+        <!-- reset: apaga tudo -->
+        <button type="reset">RESETAR</button>
+        <!-- textarea: tipo de input para usuário digita. Ajustável. Ex.: feedback -->
+        <textarea name="" id="" cols="20" rows="20"></textarea>
+        <!-- select: usado em formulários. Input com options para o usuário escolher -->
+        <select name="" id="">
+            <!-- value: valro agregado ao input. O que o input recebe ou passa -->
+            <option value="teste1">1</option>
+            <option value="teste2">2</option>
+            <option value="teste3">3</option>
+        </select>
+        
+    </form>
+</body>
+</html>
